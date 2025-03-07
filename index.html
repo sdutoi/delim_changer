@@ -50,8 +50,8 @@
       text = text.replace(/\\\(/g, '$');
       text = text.replace(/\\\)/g, '$');
       // Replace display math delimiters
-      text = text.replace(/\\\[/g, '$$');
-      text = text.replace(/\\\]/g, '$$');
+      text = text.replace(/\\\[/g, '$$$$'); // $$$$ outputs $$
+      text = text.replace(/\\\]/g, '$$$$'); // $$$$ outputs $$
       return text;
     }
 
